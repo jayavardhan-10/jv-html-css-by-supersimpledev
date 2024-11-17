@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridp</title>
+</head>
+
+<body>
+
+    <div style="display: grid; grid-template-columns: 100px 100px;">
+        <div style="background-color: aqua;">div1</div>
+        <div style="background-color: pink;">div2 <p>text daf</p>
+            <p>;fdaskl</p>
+        </div>
+    </div>
+
+
+    <div style="display: grid; grid-template-columns: 100px 100px; margin-top: 30px;">
+        <div style="background-color: aqua;">div1</div>
+        <div style="background-color: pink;">div2 <p>text daf</p>
+            <p>;fdaskl</p>
+        </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 100px 100px 200px; margin-top: 30px;">
+        <div style="background-color: aqua;">div1</div>
+        <div style="background-color: pink;">div2 <p>text daf</p>
+            <p>;fdaskl</p>
+        </div>
+
+        <div style="background-color: rgb(255, 0, 43);">div2 <p>text daf</p>
+            <p>;fdaskl</p>
+        </div>
+
+
+        <div style="display: grid; grid-template-columns: 100px 100px 200px; margin-top: 30px;">
+            <div style="background-color: aqua;">div1</div>
+            <div style="background-color: pink;">div2 <p>text daf</p>
+                <p>;fdaskl</p>
+            </div>
+            <!-- till you dont give 3rd one nothing will be visible near the 3rd column. -->
+            <div style="background-color: pink;">div2 <p>text daf</p>
+                <p>;fdaskl</p>
+            </div>
+            <!-- here you defined width for 3 columns only 
+        so here if you add 4th one 
+        it will be added at the bottom 
+        in the next line -->
+            <div style="background-color: rgb(0, 89, 255);">div4</div>
+    </div>
+    </div>
+
+
+    <div style="display: grid; grid-template-columns: 100px 1fr; margin-top: 30px;">
+        <!-- here using the 1fr freespace
+        to take up the left out free space till the last -->
+        <div style="background-color: aqua;">div1</div>
+        <div style="background-color: red;">1fr</div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 100px 1fr 1fr; margin-top: 30px;">
+        <!-- the last 2 elements of 1fr and 1fr will just 
+        share left out space in 1:1 ratio -->
+        <div style="background-color: aqua;">div1</div>
+        <div style="background-color: red;">1st 1fr</div>
+        <div style="background-color: yellow;">2nd 1fr</div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 100px 1fr 2fr; margin-top: 30px;">
+        <!-- the last 2 elements of 1fr and 1fr will just 
+        share left out space in 1:2 ratio -->
+        <div style="background-color: aqua;">div1</div>
+        <div style="background-color: red;"> 1fr</div>
+        <div style="background-color: yellow;"> 2fr</div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 0.5fr 1fr 2fr; margin-top: 30px;">
+        <!-- the last 3 elements of  will just 
+        share left out space in 0.5:1:2 ratio -->
+        <div style="background-color: aqua;">div1</div>
+        <div style="background-color: red;"> 1fr</div>
+        <div style="background-color: yellow;"> 2fr </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 0.5fr 1fr 2fr; margin-top: 30px;">
+        <div style="background-color: aqua;">div1</div>
+        <div style="background-color: red;"> 1fr</div>
+        <div style="background-color: yellow;"> 2fr <p>2nd hello</p></div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 0.5fr 1fr 2fr; margin-top: 30px;">
+        <div style="background-color: aqua;">div1</div>
+        <div style="background-color: red;"> 1fr</div>
+        <div style="background-color: yellow;"> 2fr <p>2nd hello</p></div>
+        <div style="background-color: gray;">4th element</div>
+        <!-- this 4th element wasnt defined any size at all so it fells down -->
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; margin-top: 30px;" >
+        <div style="background-color: pink;" >
+            1st 1 fr pink
+        </div>
+        <div style="background-color: aqua;" >
+            2st 1 fr aqua
+        </div>
+        <div style="background-color: pink;" >
+            3st 1 fr pink
+        </div>
+        <div style="background-color: aqua;" >
+            4th down thing
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+
+
+
+    <!-- for youtube thing -->
+    <div style="display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    column-gap: 20px;
+    row-gap: 40px;
+    " >
+        <div style="background-color: pink; height: 200px;" >
+            1st 1 fr pink
+        </div>
+        <div style="background-color: aqua; height: 200px; " >
+            2st 1 fr aqua
+        </div>
+        <div style="background-color: pink; height: 200px; " >
+            3st 1 fr pink
+        </div>
+        
+        <!-- row 2 -->
+        <div style="background-color: pink; height: 200px;" >
+            1st 1 fr pink
+        </div>
+        <div style="background-color: aqua; height: 200px; " >
+            2st 1 fr aqua
+        </div>
+        <div style="background-color: pink; height: 200px; " >
+            3st 1 fr pink
+        </div>
+    </div>
+
+</body>
+</html>

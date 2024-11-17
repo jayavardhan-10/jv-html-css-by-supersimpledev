@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container
+        {
+            display: inline-block;
+            width: 150px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.311) ;
+            margin-right: 10px;
+        }
+        .profile-pic {
+            display: inline-block;
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+        }
+        .name
+        {
+            margin: 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .mutual-dp
+        {
+            margin: 3px;
+            display: inline-block;
+            width: 23px;
+            height: 23px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        .secondlinediv
+        {
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .friends
+        {
+            display: inline-block;
+            margin: 3px;
+            color: rgb(119, 119, 119);
+            font-size: 14px;
+            /* font-weight: bold; */
+        }
+        .add-friend
+        {
+            border-style: none;
+            padding: 10px 20px 10px 20px;
+            color: white;
+            background-color: rgb(37, 142, 255);
+            border-radius: 5px;
+            margin: 10px 10px 10px 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="profile-pic" src="cat.jpg" alt="">
+        <p class="name">Oliver</p>
+        <div class="secondlinediv">
+            <img src="dog2.jpg" alt="" class="mutual-dp">
+            <p class="friends">2 mutual friends</p>
+
+        </div>
+        
+        <button class="add-friend">Add Friend</button>
+    </div>
+
+
+    <div class="container">
+        <img class="profile-pic" src="cat2.jpg" alt="">
+        <p class="name">Mimi</p>
+        <div class="secondlinediv">
+            <img src="dog2.jpg" alt="" class="mutual-dp">
+            <p class="friends">3 mutual friends</p>
+        </div>
+        <button class="add-friend">Add Friend</button>
+    </div>
+
+    <div class="container">
+        <img class="profile-pic" src="dog.jpg" alt="">
+        <p class="name">Rex</p>
+        
+        <div class="secondlinediv">
+            <img src="dog2.jpg" alt="" class="mutual-dp">
+            <p class="friends">4 mutual friends</p>
+
+        </div>
+        <button class="add-friend">Add Friend</button>
+    </div>
+</body>
+
+</html>

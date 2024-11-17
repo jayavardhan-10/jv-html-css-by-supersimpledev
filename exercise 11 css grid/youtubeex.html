@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube div</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+
+            font-family: 'Roboto', sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
+        }
+
+        p {
+            margin: 0;
+
+        }
+
+        .search-box {
+            display: block;
+        }
+
+        /* not needed anymore */
+        /* .video-preview {
+            display: inline-block;
+            width: 300px;
+            vertical-align: top;
+            margin-right: 15px;
+        } */
+
+        .thumbnail-row
+        {
+            margin-bottom: 12px;
+        }
+        .thumbnail {
+            width: 100%;
+        }
+
+        .channel-picture {
+            display: inline-block;
+            width: 50px;
+            vertical-align: top;
+        }
+
+        .profile-pic {
+            display: inline-block;
+            width: 40px;
+            border-radius: 50px;
+        }
+
+        .video-info {
+            display: inline-block;
+            width: 200px;
+        }
+
+        .video-title {
+            margin-top: 0;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 12px;
+        }
+
+        .video-author,
+        .video-stats {
+            font-size: 12px;
+            color: rgb(96, 96, 96);
+        }
+
+        .video-author {
+            margin-bottom: 4px;
+        }
+
+        .video-grid
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 15px;
+            row-gap: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Search With Google" class="search-box">
+
+
+
+    <div class="video-grid" >
+
+    
+    <div class="video-preview">
+        <!-- the thumbnail row -->
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail-1.webp" alt="">
+        </div>
+        <!-- left row for channel profile -->
+        <div class="channel-picture">
+            <img class="profile-pic" src="channel-1.jpeg" alt="">
+        </div>
+
+        <!-- right row for the channel info -->
+        <div class="video-info">
+            <p class="video-title">Talking Tech and Ai with Google CEO Sundar Pichai!</p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#8226; 6 Months ago</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="video-preview">
+        <!-- the thumbnail row -->
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail-2.webp" alt="">
+        </div>
+        <!-- left row for channel profile -->
+        <div class="channel-picture">
+            <img class="profile-pic" src="channel-2.jpeg" alt="">
+        </div>
+
+        <!-- right row for the channel info -->
+        <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views &#8226; 4 years ago</p>
+        </div>
+
+    </div>
+
+
+    <div class="video-preview">
+        <!-- the thumbnail row -->
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail-3.webp" alt="">
+        </div>
+        <!-- left row for channel profile -->
+        <div class="channel-picture">
+            <img class="profile-pic" src="channel-3.jpeg" alt="">
+        </div>
+
+        <!-- right row for the channel info -->
+        <div class="video-info">
+            <p class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</p>
+            <p class="video-author">SSSSniperWolf</p>
+            <p class="video-stats">3.4M views &#8226; 6 Months ago</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="video-preview">
+        <!-- the thumbnail row -->
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail-4.webp" alt="">
+        </div>
+        <!-- left row for channel profile -->
+        <div class="channel-picture">
+            <img class="profile-pic" src="channel-4.jpeg" alt="">
+        </div>
+
+        <!-- right row for the channel info -->
+        <div class="video-info">
+            <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+            <p class="video-author">Veritasium</p>
+            <p class="video-stats">19M views &#8226; 4 years ago</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="video-preview">
+        <!-- the thumbnail row -->
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail-5.webp" alt="">
+        </div>
+        <!-- left row for channel profile -->
+        <div class="channel-picture">
+            <img class="profile-pic" src="channel-5.jpeg" alt="">
+        </div>
+
+        <!-- right row for the channel info -->
+        <div class="video-info">
+            <p class="video-title">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+            <p class="video-author">CS dojo</p>
+            <p class="video-stats">3.4M views &#8226; 6 Months ago</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="video-preview">
+        <!-- the thumbnail row -->
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail-6.webp" alt="">
+        </div>
+        <!-- left row for channel profile -->
+        <div class="channel-picture">
+            <img class="profile-pic" src="channel-6.jpeg" alt="">
+        </div>
+
+        <!-- right row for the channel info -->
+        <div class="video-info">
+            <p class="video-title">Anything You Can Fit In The Circle I’ll Pay For</p>
+            <p class="video-author">Mr Beast</p>
+            <p class="video-stats">19M views &#8226; 4 years ago</p>
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- <div class="video-preview">
+        <img class="thumbnail" src="thumbnail-2.webp" alt="">
+        <p class="video-title" >Try Not To Laugh Challenge #9</p>
+        <p>Markiplier</p>
+        <p>19M views &#8226; 4 years ago</p>
+    </div> -->
+    <!-- here there will be issue with postioning solve this by
+    vertcal-align tag in css -->
+</body>
+
+</html>

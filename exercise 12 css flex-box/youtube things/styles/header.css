@@ -1,0 +1,38 @@
+.search-box {
+    display: block;
+}
+
+
+.header
+{
+    height: 55px;
+
+    display: flex;
+
+    flex-direction: row;
+    /* as you are working HORIZONTALLY */
+
+    justify-content: space-between;
+    /* to keep the things with nice correct gap in between */
+}
+
+.left-section{
+    background-color: lightblue;
+    width: 150px;
+}
+
+
+.middle-section{
+    background-color: pink;
+    flex:1;
+    margin-left: 70px;
+    margin-right: 35px;
+    /* if you want to give the limit to max width */
+    max-width: 500px;
+}
+
+
+.right-section{
+    background-color: lightblue;
+    width: 200px;
+}

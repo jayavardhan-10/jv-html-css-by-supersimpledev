@@ -1,0 +1,322 @@
+<!-- 
+    the layout is more rigid for grid
+    when we move the objects the properties are not with objects
+
+    while in FLEX BOX
+    the properties move along with the object
+    flex box takes as much space as it wants
+
+
+    GRID: RIGID LAYOUT
+    FLEXBOX : FLEXIBLE LAYOUT
+ -->
+
+
+
+
+
+
+
+<style>
+
+</style>
+
+<title>Flexbox-practice</title>
+
+
+<body style="padding-bottom: 1000px;">
+    <!-- flex box takes as much space as it wants -->
+
+    <div style="display: flex;
+     flex-direction: row;">
+        <!-- here flex direction means that the flexing is applied HORIZONTALLY -->
+        <div style="background-color: pink;">
+            div 1
+        </div>
+
+        <div style="background-color: aqua;">
+            div 2
+        </div>
+    </div>
+
+
+
+    <div style="display: flex;
+     flex-direction: row;
+     margin-top: 20;
+     ">
+        <!-- here flex direction means that the flexing is applied HORIZONTALLY -->
+        <div style="background-color: pink;">
+            div 1 if more content added size changed
+        </div>
+
+        <div style="background-color: aqua;">
+            div 2
+            <p>if another p added goes to next line</p>
+        </div>
+    </div>
+
+
+    <div style="display: flex;
+     flex-direction: row;
+     margin-top: 20;
+     ">
+        <div style="background-color: pink;">
+            div 1 if more content added size changed
+        </div>
+
+        <div style="background-color: aqua;">
+            div 2
+            <p>if another p added goes to next line</p>
+        </div>
+    </div>
+
+
+    <div style="display: flex;
+     flex-direction: row;
+     margin-top: 20;
+     ">
+        <div style="background-color: pink;
+        width: 100px;">
+            100px
+        </div>
+
+        <div style="background-color: aqua;
+        flex:1">
+            <!-- here flex:1 means 1fr of grid -->
+            flex:1
+        </div>
+    </div>
+
+    <div style="display: flex;
+     flex-direction: row;
+     margin-top: 20;
+     ">
+        <div style="background-color: pink;
+        width: 100px;">
+            100px
+        </div>
+
+        <div style="background-color: aqua;
+        flex:1">
+            <!-- here flex:1 means 1fr of grid -->
+            flex:1
+        </div>
+
+        <div style="background-color: pink;
+        flex: 2;">
+            <!-- here flex:2 means 2fr of grid -->
+            flex : 2
+        </div>
+    </div>
+
+    <!-- JUSTIFY CONTENT IS USED IN THIS FLEX
+IT IS USED FOR SETTING THE THINGS
+ HORIZONTALLY -->
+
+    <div style="display: flex;
+     flex-direction: row;
+     margin-top: 20;
+     height: 70px;
+     border-style: solid;
+     border-width: 1px;
+     border-color: gray;
+     justify-content: start;
+     
+     ">
+        <!-- this start is the default value -->
+        <div style="background-color: pink;
+        width: 100px;">
+            100px
+        </div>
+
+        <div style="background-color: aqua;
+        width: 100px;">
+            100px
+        </div>
+
+        <div style="background-color: pink;
+        width: 100px;">
+            100px
+        </div>
+    </div>
+
+    <div style="display: flex;
+     flex-direction: row;
+     margin-top: 20;
+     height: 70px;
+     border-style: solid;
+     border-width: 1px;
+     border-color: gray;
+     justify-content: center;
+     
+     ">
+        <!-- this CENTER keeps the things in centervalue -->
+        <div style="background-color: pink;
+        width: 100px;">
+            CENTER
+        </div>
+
+        <div style="background-color: aqua;
+        width: 100px;">
+            CENTER
+        </div>
+
+        <div style="background-color: pink;
+        width: 100px;">
+            CENTER
+        </div>
+    </div>
+
+    <div style="display: flex;
+     flex-direction: row;
+     margin-top: 20;
+     height: 70px;
+     border-style: solid;
+     border-width: 1px;
+     border-color: gray;
+     justify-content:end;
+     
+     ">
+        <!-- this END keeps the things in end  -->
+        <div style="background-color: pink;
+        width: 100px;">
+            END
+        </div>
+
+        <div style="background-color: aqua;
+        width: 100px;">
+            END
+        </div>
+
+        <div style="background-color: pink;
+        width: 100px;">
+            END
+        </div>
+    </div>
+
+
+
+    <div style="display: flex;
+     flex-direction: row;
+     margin-top: 20;
+     height: 70px;
+     border-style: solid;
+     border-width: 1px;
+     border-color: gray;
+     justify-content:space-between;
+     
+     ">
+        <!-- this SPACE BETWEEN keeps the things in evenly spread  -->
+        <div style="background-color: pink;
+        width: 100px;">
+            SPACE BETWEEN
+        </div>
+
+        <div style="background-color: aqua;
+        width: 100px;">
+            100px
+        </div>
+
+        <div style="background-color: pink;
+        width: 100px;">
+            100px
+        </div>
+    </div>
+
+    <div style="display: flex;
+     flex-direction: row;
+     margin-top: 20;
+     height: 70px;
+     border-style: solid;
+     border-width: 1px;
+     border-color: gray;
+     justify-content: space-evenly;
+     
+     ">
+        <!-- this SPACE BETWEEN keeps the things in evenly spread  -->
+        <div style="background-color: pink;
+        width: 100px;">
+            space-evenly
+        </div>
+
+        <div style="background-color: aqua;
+        width: 100px;">
+            100px
+        </div>
+
+        <div style="background-color: pink;
+        width: 100px;">
+            100px
+        </div>
+    </div>
+
+    <div style="display: flex;
+     flex-direction: row;
+     margin-top: 20;
+     height: 70px;
+     border-style: solid;
+     border-width: 1px;
+     border-color: gray;
+     justify-content:space-around ;
+     
+     ">
+        <!-- this SPACE AROUND keeps the things in evenly spread  -->
+        <div style="background-color: pink;
+        width: 100px;">
+            space AROUND
+        </div>
+
+        <div style="background-color: aqua;
+        width: 100px;">
+            100px
+        </div>
+
+        <div style="background-color: pink;
+        width: 100px;">
+            100px
+        </div>
+    </div>
+
+    <!-- ALIGN ITEMS IS USED IN THIS FLEX
+IT IS USED FOR SETTING THE THINGS
+VERTICALLY -->
+        <div style="display: flex;
+    flex-direction: row;
+    margin-top: 20;
+    height: 70px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    justify-content:space-around ;
+    /* default is normal */
+
+    align-items: baseline;
+    align-items: first baseline;
+    align-items:flex-end ;
+    align-items:flex-start ;
+    align-items:safe ;
+    align-items:self-end ;
+    align-items:stretch ;
+    align-items:normal ;
+    align-items: center;
+    align-items:end ;
+
+    ">
+            <!-- comment these properties and understand the 
+            ALIGN-ITEMS  -->
+            <div style="background-color: pink; width: 100px;">
+                100px   
+            </div>
+
+            <div style="background-color: aqua; width: 100px;">
+                100px
+            </div>
+
+            <div style="background-color: pink; width: 100px;">
+                100px
+            </div>
+        </div>
+
+
+</body>
